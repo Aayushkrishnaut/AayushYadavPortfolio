@@ -9297,8 +9297,18 @@ textarea.form-control {
   color: rgba(255, 255, 255, 0.8); }
 
 @media (max-width: 767.98px) {
-  .ftco-counter .counter-wrap {
+  .ftco-counter  {
     margin-bottom: 20px; } }
+
+@media (max-width: 768px) {
+  .counter-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
 
 .ftco-counter .ftco-number {
   display: block;
