@@ -22,6 +22,7 @@
 	<link rel="stylesheet" href="css/flaticon.css">
 	<link rel="stylesheet" href="css/icomoon.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="icon" type="image/png" href="https://logos-world.net/wp-content/uploads/2021/03/FiveM-Emblem.png" />
 
 
 
@@ -30,140 +31,132 @@
 //--//-->   ABOUT
 ======================================*/
 
-
-		/*========================== blog css///////*/
-		/* Blog Section */
-
-		@media (max-width: 768px) {
+/*========================== blog css///////*/
+/* Blog Section */
+@media (max-width: 768px) {
     .row .col-md-4 {
         margin-bottom: 20px; /* Adjust the spacing as needed */
     }
 }
-		
-		#blog-section .card-img-top {
-			height: 200px;
-			/* Adjust the height as needed */
-			object-fit: cover;
-		}
 
-		h1.mb-42 {
-			color: #fff;
-			justify-content: center;
-			align-items: center;
-			display: flex;
-			border: #333 2px solid black;
-			font-weight: bold;
-			font-size: 2.7rem;
-			/* Adjust the font size as needed */
-		}
+#blog-section .card-img-top {
+    height: 200px; /* Adjust the height as needed */
+    object-fit: cover;
+}
 
-		.card {
-			border: 1px solid #ccc;
-			border-radius: 5px;
-			box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-		}
+h1.mb-42 {
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border: #333 2px solid black;
+    font-weight: bold;
+    font-size: 2.7rem; /* Adjust the font size as needed */
+}
 
-		.card-title {
-			font-size: 1.25rem;
-			font-weight: bold;
-		}
+.card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
 
-		.card-text {
-			font-size: 1rem;
-		}
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
 
-		.btn {
-			padding: 0.5rem 1rem;
-			font-size: 1rem;
-		}
+.card-text {
+    font-size: 1rem;
+}
 
-
-
+.btn {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+}
 
 .about-mf .box-shadow-full {
-			padding-top: 4rem;
-			padding-bottom: 4rem;
-		}
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
 
-		.about-mf .about-img {
-			margin-bottom: 2rem;
-		}
+.about-mf .about-img {
+    margin-bottom: 2rem;
+}
 
-		.about-mf .about-img img {
-			margin-left: 10px;
-		}
+.about-mf .about-img img {
+    margin-left: 10px;
+}
+
+.skill-mf .progress {
+    margin: .5rem 0 1.2rem 0;
+    border-radius: 0;
+    height: .7rem;
+}
+
+.skill-mf .progress .progress-bar {
+    height: .7rem;
+    background-color: #ffbd39;
+}
+
+/* Animation styles */
+#typing-animation {
+    position: relative;
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 3s steps(20, end) infinite;
+}
+
+#typing-animation:before {
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #ccc;
+    animation: typing-cursor 0.5s ease-in-out infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes typing-cursor {
+    from {
+        width: 5px;
+    }
+
+    to {
+        width: 0;
+    }
+}
+
+/* project image zoom effect */
+.zoom-effect {
+    overflow: hidden;
+    transition: transform 0.3s ease-out;
+}
+
+.zoom-effect:hover {
+    transform: scale(1.1);
+}
+
+/* For small devices (e.g., phones), add margin to the about-info and skill-mf sections */
+@media (max-width: 768px) {
+    .hhh {
+        margin-left: 4px; /* Adjust this value as needed */
+    }
+}
 
 
-		.skill-mf .progress {
-			/* background-color: #cde1f8; */
-			margin: .5rem 0 1.2rem 0;
-			border-radius: 0;
-			height: .7rem;
-		}
-
-		.skill-mf .progress .progress-bar {
-			height: .7rem;
-			background-color: #ffbd39;
-		}
-
-
-		/* Animation styles */
-		#typing-animation {
-			position: relative;
-			font-size: 30px;
-			font-weight: bold;
-			color: rgb(255, 255, 255);
-			overflow: hidden;
-			white-space: nowrap;
-			animation: typing 3s steps(20, end) infinite;
-		}
-
-		#typing-animation:before {
-			content: "";
-			/* position: absolute; */
-			top: 0;
-			left: 0;
-			width: 0;
-			height: 100%;
-			background-color: #ccc;
-			animation: typing-cursor 0.5s ease-in-out infinite;
-		}
-
-
-
-
-
-		@keyframes typing {
-			from {
-				width: 0;
-			}
-
-			to {
-				width: 100%;
-			}
-		}
-
-		@keyframes typing-cursor {
-			from {
-				width: 5px;
-			}
-
-			to {
-				width: 0;
-			}
-		}
-
-
-		/* project image zoom effect */
-
-		.zoom-effect {
-			overflow: hidden;
-			transition: transform 0.3s ease-out;
-		}
-
-		.zoom-effect:hover {
-			transform: scale(1.1);
-		}
 	</style>
 
 
@@ -182,7 +175,7 @@
 
 			<div class="collapse navbar-collapse" id="ftco-nav">
 				<ul class="navbar-nav nav ml-auto">
-					<li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+					<li class="nav-item fixed-home"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
 					<li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
 					<li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
 					<li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
@@ -199,8 +192,8 @@
 				<div class="container">
 					<div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end"
 						data-scrollax-parent="true">
-						<div class="one-third js-fullheight order-md-last img"
-							style="background-image:url(images/123ww.png);">
+						<div class="one-third js-fullheight order-md-last img" id="zz"
+							style="background-image:url(images/my-img-removebg-preview.png)";>
 							<div class="overlay"></div>
 						</div>
 						<div class="one-forth d-flex  align-items-center ftco-animate"
@@ -251,7 +244,7 @@
 								<h2 class="d-flex" style="margin-bottom: 0">With over 6 Months of experience</h2>
 								<br>
 								<p><a href="https://www.linkedin.com/in/AayushkumarYadav/"
-										class="btn btn-primary py-3 px-4">LinkedIn</a>
+										class="btn btn-primary py-3 px-4">&nbsp;Hire Me&nbsp;</a>
 									<a href="https://github.com/Aayushkrishnaut"
 										class="btn btn-white btn-outline-white py-3 px-4">My works</a>
 								</p>
@@ -280,9 +273,11 @@
 													class="img-fluid rounded b-shadow-a" alt="">
 											</div>
 										</div>
+
+
 										<!-- Details next to profile image -->
 										<div class="col-sm-6 col-md-7">
-											<div class="about-info">
+											<div class="about-info hhh">
 												<p><span class="title-s">Name: </span> <span>Aayushkumar Yadav</span>
 												</p>
 												<p><span class="title-s">Job Role: </span> <span>Web Developer</span>
@@ -293,7 +288,7 @@
 										</div>
 									</div>
 
-									<div class="skill-mf">
+									<div class="skill-mf hhh">
 										<p class="title-s">Skills</p>
 										<span>MySQL</span> <span class="pull-right">50%</span>
 										<div class="progress">
@@ -329,14 +324,16 @@
 							</div>
 						</div>
 
+
+
 						<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
 							<div class="row justify-content-start pb-3">
 								<div class="col-md-12 heading-section ftco-animate">
 
-									<h1 class="big">About</h1>
-									<h2 class="mb-4">About Me</h2>
+									<h1 class="big ">About</h1>
+									<h2 class="mb-4 hhh">About Me</h2>
 
-									<p>Hare Krishna to everyone My Name is Aāyushkumar Yadav, At present I am a Second
+									<p class="hhh">Hare Krishna to everyone My Name is Aāyushkumar Yadav, At present I am a Second
 										Year
 										Electronics and Telecommunication
 										Engineering Student at Thakur College of Engineering and Technology Kandivali
@@ -452,10 +449,10 @@
 			<div class="row">
 				<div class="col-md-6">
 					<div class="resume-wrap ftco-animate">
-						<span class="date">2022-2026</span>
+						<span class="date">2022-Present</span>
 						<h2>Bachelors of Engineering in E&TC</h2>
 						<h2 class="position">Thakur College of Engineering And Technology</h2>
-						<p class="mt-4">Grade : 8 CGPA <br>Status : Pursuing</p>
+						<p class="mt-4">Grade : 8.7 CGPA <br>Status : Pursuing (4 semester)</p>
 					</div>
 				</div>
 
@@ -512,7 +509,7 @@
 						</a>
 						<div class="text mt-3 float-right d-block">
 
-							<h3 class="heading"><a href="#">My Portfolio web-Page using Javascript</a></h3>
+							<h3 class="heading"><a href="https://aayushkrishnaut.github.io/MY-Website/">My Portfolio web-Page using Javascript</a></h3>
 							<p>It show case My skills.</p>
 						</div>
 					</div>
@@ -524,7 +521,7 @@
 						</a>
 						<div class="text mt-3 float-right d-block">
 
-							<h3 class="heading"><a href="#">QR code generator using Javascript</a></h3>
+							<h3 class="heading"><a href="https://github.com/Aayushkrishnaut">QR code generator using Javascript</a></h3>
 							<p>It generates a QR code based on the given Text or URL.</p>
 						</div>
 					</div>
@@ -536,7 +533,7 @@
 						</a>
 						<div class="text mt-3 float-right d-block">
 
-							<h3 class="heading"><a href="#">OTP validation form using Javascript</a></h3>
+							<h3 class="heading"><a href="https://github.com/Aayushkrishnaut">OTP validation form using Javascript</a></h3>
 							<p>It sends the OTP to the entered Mobile Number.</p>
 						</div>
 					</div>
@@ -552,7 +549,7 @@
 						</a>
 						<div class="text mt-3 float-right d-block">
 
-							<h3 class="heading"><a href="#"> Tic Tac Toe Web Game using HTML CSS Javascript </a></h3>
+							<h3 class="heading"><a href="https://github.com/Aayushkrishnaut"> Tic Tac Toe Web Game using HTML CSS Javascript </a></h3>
 							<p>It have features like restart the game.</p>
 						</div>
 					</div>
@@ -564,7 +561,7 @@
 						</a>
 						<div class="text mt-3 float-right d-block">
 
-							<h3 class="heading"><a href="#">weather web-Page with Real time data using Javascript </a>
+							<h3 class="heading"><a href="https://github.com/Aayushkrishnaut">weather web-Page with Real time data using Javascript </a>
 							</h3>
 							<p>It shows the real time weather of the searched location with the help of Javascript and
 								API key.</p>
@@ -581,7 +578,7 @@
 				<div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
 					<div class="block-18">
 						<div class="text">
-							<strong class="number" data-number="20">0</strong>
+							<strong class="number" data-number="10">0</strong>
 							<span>Achievements</span>
 						</div>
 					</div>
@@ -589,7 +586,7 @@
 				<div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
 					<div class="block-18">
 						<div class="text">
-							<strong class="number" data-number="10">0</strong>
+							<strong class="number" data-number="15">0</strong>
 							<span>Projects</span>
 						</div>
 					</div>
@@ -598,7 +595,7 @@
 					<div class="block-18">
 						<div class="text">
 							<strong class="number" data-number="5">0</strong>
-							<span>Mentored Students</span>
+							<span>Mentored students</span>
 						</div>
 					</div>
 				</div>
@@ -645,11 +642,11 @@
 			<div class="row">
 				<div class="col-md-4">
 					<div class="card">
-						<img src="https://tse3.mm.bing.net/th?id=OIP.Y5c8oXOeQn92O-nTaILgOgHaEK&pid=Api&P=0&h=180"
+						<img src="https://tse4.mm.bing.net/th?id=OIP.ESRdcspNaVgPqpkh5OALZgHaD0&pid=Api&P=0&h=180"
 							class="card-img-top" alt="Blog Image">
 						<div class="card-body">
-							<h5 class="card-title">Read How Ai Replace WebDev Jobs</h5>
-							<p class="card-text"> it tells about how ai can replace tech jobs in future.</p>
+							<h5 class="card-title">AI revolution</h5>
+							<p class="card-text">It tells about that how AI will replace tech jobs till 2030s.</p>
 							<a href="Blog.html" class="btn btn-primary">Read More</a>
 						</div>
 					</div>
@@ -663,11 +660,9 @@
 						<img src="https://www.forbes.com/advisor/wp-content/uploads/2022/09/how_to_start_a_travel_blog_-_article_image.jpg"
 							class="card-img-top" alt="Blog Image">
 						<div class="card-body">
-							<h5 class="card-title">Blog Title 2</h5>
-							<p class="card-text">Some quick example text to build on the card title and make up the bulk
-								of
-								the card's content.</p>
-							<a href="blog.html" class="btn btn-primary">Read More</a>
+							<h5 class="card-title">How to get Hire in FAANG?</h5>
+							<p class="card-text">Step by Step Road Map to get hired in FAANG companies</p>
+							<a href="https://www.geeksforgeeks.org/7-best-tips-to-get-hired-at-faang-companies/" class="btn btn-primary">Read More</a>
 						</div>
 					</div>
 				</div>
@@ -681,29 +676,15 @@
 						<img src="https://www.greatlike.com/wp-content/uploads/2020/04/1584082601Web-development-designing-Anvar-Freelancer-1-1.png"
 							class="card-img-top" alt="Blog Image">
 						<div class="card-body">
-							<h5 class="card-title">Blog Title 3</h5>
-							<p class="card-text">Some quick example text to build on the card title and make up the bulk
-								of
-								the card's content.</p>
-							<a href="blog.html" class="btn btn-primary">Read More</a>
+							<h5 class="card-title">Frontend developer Roadmap</h5>
+							<p class="card-text">How to become Frontend developer?and why react is important?</p>
+							<a href="https://www.geeksforgeeks.org/frontend-developer-roadmap/" class="btn btn-primary">Read More</a>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -728,22 +709,24 @@
 						<p>Mumbai, India</p>
 					</div>
 				</div>
+
 				<div class="col-md-6 col-lg-3 d-flex ftco-animate">
 					<div class="align-self-stretch box p-4 text-center">
 						<div class="icon d-flex align-items-center justify-content-center">
 							<span class="icon-phone2"></span>
 						</div>
 						<h3 class="mb-4">Contact Number</h3>
-						<p><a href="tel://9137380392">contact-info</a></p>
+						<p><a href="tel://9137380392">+ 000 000 000</a></p>
 					</div>
 				</div>
+
 				<div class="col-md-6 col-lg-3 d-flex ftco-animate">
 					<div class="align-self-stretch box p-4 text-center">
 						<div class="icon d-flex align-items-center justify-content-center">
 							<span class="icon-paper-plane"></span>
 						</div>
 						<h3 class="mb-4">Email Address</h3>
-						<p><a href="mailto:aayushkrishnaut@gmail.com">Email</a></p>
+						<p><a href="mailto:aayushkrishnaut@gmail.com">aayushkrishnaut@gmail.com</a></p>
 					</div>
 				</div>
 				<div class="col-md-6 col-lg-3 d-flex ftco-animate">
@@ -761,7 +744,7 @@
 					<br>
 					<div class="row justify-content-center">
 						<div class="col-md-7 ftco-animate text-center">
-							<h2>Have a<span> Question? </span> <a href="#" class="btn btn-primary py-3 px-5">Click
+							<h2>Have a<span> Question? </span> <a href="https://forms.gle/gmj7je3fVJ6nXgUa9" class="btn btn-primary py-3 px-5">Click
 									Here</a> </h2>
 						</div>
 					</div>
@@ -774,7 +757,7 @@
 									class="icon-linkedin"></span></a></li>
 						<li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
 						<li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
-						<li class="ftco-animate"><a href="https://www.instagram.com/aayushkrishnaut/"><span
+						<li class="ftco-animate"><a href="#"><span
 									class="icon-instagram"></span></a></li>
 					</ul>
 					<br>
@@ -810,6 +793,8 @@
 		</svg></div>
 
 
+		
+
 	<script src="js/jquery.min.js"></script>
 	<script src="js/jquery-migrate-3.0.1.min.js"></script>
 	<script src="js/popper.min.js"></script>
@@ -824,6 +809,11 @@
 	<script src="js/scrollax.min.js"></script>
 
 	<script src="js/main.js"></script>
+	<body src="script1.js">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	 <!-- for collapse -->
+	
+
 
 </body>
 
