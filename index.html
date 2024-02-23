@@ -30,7 +30,50 @@
 //--//-->   ABOUT
 ======================================*/
 
-		.about-mf .box-shadow-full {
+
+		/*========================== blog css///////*/
+		/* Blog Section */
+		#blog-section .card-img-top {
+			height: 200px;
+			/* Adjust the height as needed */
+			object-fit: cover;
+		}
+
+		h1.mb-42 {
+			color: #fff;
+			justify-content: center;
+			align-items: center;
+			display: flex;
+			border: #333 2px solid black;
+			font-weight: bold;
+			font-size: 2.7rem;
+			/* Adjust the font size as needed */
+		}
+
+		.card {
+			border: 1px solid #ccc;
+			border-radius: 5px;
+			box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+		}
+
+		.card-title {
+			font-size: 1.25rem;
+			font-weight: bold;
+		}
+
+		.card-text {
+			font-size: 1rem;
+		}
+
+		.btn {
+			padding: 0.5rem 1rem;
+			font-size: 1rem;
+		}
+
+
+
+
+.about-mf .box-shadow-full {
 			padding-top: 4rem;
 			padding-bottom: 4rem;
 		}
@@ -79,6 +122,10 @@
 			animation: typing-cursor 0.5s ease-in-out infinite;
 		}
 
+
+
+
+
 		@keyframes typing {
 			from {
 				width: 0;
@@ -110,10 +157,6 @@
 		.zoom-effect:hover {
 			transform: scale(1.1);
 		}
-
-		body {
-    overflow-x: hidden; /* Prevent horizontal scrolling */
-}
 	</style>
 
 
@@ -136,6 +179,7 @@
 					<li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
 					<li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
 					<li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
+					<li class="nav-item"><a href="#blog-section" class="nav-link"><span>Blogs</span></a></li>
 					<li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
 				</ul>
 			</div>
@@ -198,7 +242,7 @@
 								<br>
 								<h2>Web Developer Enthusiast</h2>
 								<h2 class="d-flex" style="margin-bottom: 0">With over 6 Months of experience</h2>
-							<br>
+								<br>
 								<p><a href="https://www.linkedin.com/in/AayushkumarYadav/"
 										class="btn btn-primary py-3 px-4">LinkedIn</a>
 									<a href="https://github.com/Aayushkrishnaut"
@@ -219,106 +263,112 @@
 			<div class="row">
 				<div class="row d-flex align-items-stretch">
 <!-- 					<div class="row d-flex"> -->
-					<div class="col-md-6 col-lg-5 d-flex">
-						<div class="img-about img d-flex align-items-stretch">
-							<div class="overlay">
-								<div class="row">
-									<div class="col-sm-6 col-md-5">
-										<div class="about-img">
-											<img src="images/1707223974573-modified.png"
-												class="img-fluid rounded b-shadow-a" alt="">
+						<div class="col-md-6 col-lg-5 d-flex">
+							<div class="img-about img d-flex align-items-stretch">
+								<div class="overlay">
+									<div class="row">
+										<div class="col-sm-6 col-md-5">
+											<div class="about-img">
+												<img src="images/1707223974573-modified.png"
+													class="img-fluid rounded b-shadow-a" alt="">
+											</div>
+										</div>
+										<!-- Details next to profile image -->
+										<div class="col-sm-6 col-md-7">
+											<div class="about-info">
+												<p><span class="title-s">Name: </span> <span>Aayushkumar Yadav</span>
+												</p>
+												<p><span class="title-s">Job Role: </span> <span>Web Developer</span>
+												</p>
+												<p><span class="title-s">Experience: </span> <span>6 Months</span></p>
+												<p><span class="title-s">Address: </span> <span>Mumbai, India</span></p>
+											</div>
 										</div>
 									</div>
-									<!-- Details next to profile image -->
-									<div class="col-sm-6 col-md-7">
-										<div class="about-info">
-											<p><span class="title-s">Name: </span> <span>Aayushkumar Yadav</span></p>
-											<p><span class="title-s">Job Role: </span> <span>Web Developer</span></p>
-											<p><span class="title-s">Experience: </span> <span>6 Months</span></p>
-											<p><span class="title-s">Address: </span> <span>Mumbai, India</span></p>
+
+									<div class="skill-mf">
+										<p class="title-s">Skills</p>
+										<span>MySQL</span> <span class="pull-right">50%</span>
+										<div class="progress">
+											<div class="progress-bar" role="progressbar" style="width: 50%;"
+												aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
 										</div>
-									</div>
-								</div>
 
-								<div class="skill-mf">
-									<p class="title-s">Skills</p>
-									<span>MySQL</span> <span class="pull-right">50%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 50%;"
-											aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
-									</div>
+										<span>PYTHON</span> <span class="pull-right">40%</span>
+										<div class="progress">
+											<div class="progress-bar" role="progressbar" style="width: 40%"
+												aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+										</div>
 
-									<span>PYTHON</span> <span class="pull-right">40%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 40%"
-											aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-									</div>
+										<span>HTML</span> <span class="pull-right">90%</span>
+										<div class="progress">
+											<div class="progress-bar" role="progressbar" style="width: 90%"
+												aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+										</div>
 
-									<span>HTML</span> <span class="pull-right">90%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 90%"
-											aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-									</div>
+										<span>CSS</span> <span class="pull-right">65%</span>
+										<div class="progress">
+											<div class="progress-bar" role="progressbar" style="width: 65%"
+												aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+										</div>
 
-									<span>CSS</span> <span class="pull-right">65%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 65%"
-											aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-									</div>
-
-									<span>Javascript</span> <span class="pull-right">60%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 60%"
-											aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+										<span>Javascript</span> <span class="pull-right">60%</span>
+										<div class="progress">
+											<div class="progress-bar" role="progressbar" style="width: 60%"
+												aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+										</div>
 									</div>
 								</div>
 							</div>
 						</div>
-					</div>
 
-					<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
-						<div class="row justify-content-start pb-3">
-							<div class="col-md-12 heading-section ftco-animate">
+						<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+							<div class="row justify-content-start pb-3">
+								<div class="col-md-12 heading-section ftco-animate">
 
-								<h1 class="big">About</h1>
-								<h2 class="mb-4">About Me</h2>
+									<h1 class="big">About</h1>
+									<h2 class="mb-4">About Me</h2>
 
-								<p>Hare Krishna to everyone My Name is Aāyushkumar Yadav, At present I am a Second Year
-									Electronics and Telecommunication
-									Engineering Student at Thakur College of Engineering and Technology Kandivali (E)
-									Mumbai 400 101.</p>
-								<ul class="about-info mt-4 px-md-0 px-2">
-									<li class="d-flex"><span>Profile:</span> <span>Web Developer Intern</span></li>
-									<li class="d-flex"><span>Domain:</span> <span>Electronics & Telecommunication</span>
-									</li>
-									<li class="d-flex"><span>Education:</span> <span>Bachelor of Engineering</span></li>
-									<li class="d-flex"><span>Language:</span> <span>English, Hindi, Bhojpuri,
+									<p>Hare Krishna to everyone My Name is Aāyushkumar Yadav, At present I am a Second
+										Year
+										Electronics and Telecommunication
+										Engineering Student at Thakur College of Engineering and Technology Kandivali
+										(E)
+										Mumbai 400 101.</p>
+									<ul class="about-info mt-4 px-md-0 px-2">
+										<li class="d-flex"><span>Profile:</span> <span>Web Developer Intern</span></li>
+										<li class="d-flex"><span>Domain:</span> <span>Electronics &
+												Telecommunication</span>
+										</li>
+										<li class="d-flex"><span>Education:</span> <span>Bachelor of Engineering</span>
+										</li>
+										<li class="d-flex"><span>Language:</span> <span>English, Hindi, Bhojpuri,
 											</span></li>
-									<li class="d-flex"><span>Other Skills:</span> <span>Cloud Computing, Powerpoint,
-											Github &amp; Wordpress</span></li>
-									<li class="d-flex"><span>Interest:</span> <span>Traveling, Reading Bhagvadgita,
-											Teaching</span></li>
+										<li class="d-flex"><span>Other Skills:</span> <span>Cloud Computing, Powerpoint,
+												Github &amp; Wordpress</span></li>
+										<li class="d-flex"><span>Interest:</span> <span>Traveling, Reading Bhagvadgita,
+												Teaching</span></li>
 
-								</ul>
+									</ul>
+								</div>
 							</div>
-						</div>
 
-<br><br>
-<br>
-						<div class="counter-wrap ftco-animate d-flex mt-md-3">
-							<div class="text">
-								<p class="mb-4">
-									<span class="number" data-number="10">0</span> <span>+</span>
-									<span>&nbsp; Projects completed</span>
-								</p>
-								<p><a href="https://www.linkedin.com/in/AayushkumarYadav/"
-										class="btn btn-primary py-3 px-3">&nbsp;&nbsp;LinkedIn</a></p>
+							<br><br>
+							<br>
+							<div class="counter-wrap ftco-animate d-flex mt-md-3">
+								<div class="text">
+									<p class="mb-4">
+										<span class="number" data-number="10">0</span> <span>+</span>
+										<span>&nbsp; Projects completed</span>
+									</p>
+									<p><a href="https://www.linkedin.com/in/AayushkumarYadav/"
+											class="btn btn-primary py-3 px-3">LinkedIn</a></p>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
 	</section>
 
 
@@ -346,7 +396,8 @@
 						<span class="date">2023-Present</span>
 						<h2>Web Developer Intern</h2>
 						<span class="position">Prodigy Info-Tech</span>
-						<p class="mt-4">Prodigy Info-tech, a leading IT Company Providing Interships for Engineering & Non
+						<p class="mt-4">Prodigy Info-tech, a leading IT Company Providing Interships for Engineering &
+							Non
 							Engineering Students
 						<ul>
 							<h4>I have Made Projects Like:</h4>
@@ -366,7 +417,7 @@
 						<h2>Web Developer Intern</h2>
 						<span class="position">Bharat Intern</span>
 						<p class="mt-4">Bharat Intern, a leading IT Company Providing Interships for Engineering & Non
-						Engineering Students
+							Engineering Students
 						<ul>
 							<h4>I have Made Projects Like:</h4>
 							<li>My Portfolio</li>
@@ -450,39 +501,35 @@
 			<div class="row d-flex">
 				<div class="col-md-4 d-flex ftco-animate">
 					<div class="blog-entry justify-content-end">
-						<a href="#"
-							class="block-20 zoom-effect" style="background-image: url('images/proj_1.jpg');">
+						<a href="#" class="block-20 zoom-effect" style="background-image: url('images/proj_1.jpg');">
 						</a>
 						<div class="text mt-3 float-right d-block">
 
-							<h3 class="heading"><a
-									href="#">My Portfolio web-Page using Javascript</a></h3>
+							<h3 class="heading"><a href="#">My Portfolio web-Page using Javascript</a></h3>
 							<p>It show case My skills.</p>
 						</div>
 					</div>
 				</div>
 				<div class="col-md-4 d-flex ftco-animate">
 					<div class="blog-entry justify-content-end">
-						<a href="#"
-							class="block-20 zoom-effect" style="background-image: url('https://tse2.mm.bing.net/th?id=OIP.dH4A7toQZeDlE2Tl3sHnSQHaD4&pid=Api&P=0&h=180');">
+						<a href="#" class="block-20 zoom-effect"
+							style="background-image: url('https://tse2.mm.bing.net/th?id=OIP.dH4A7toQZeDlE2Tl3sHnSQHaD4&pid=Api&P=0&h=180');">
 						</a>
 						<div class="text mt-3 float-right d-block">
 
-							<h3 class="heading"><a
-									href="#">QR code generator using Javascript</a></h3>
+							<h3 class="heading"><a href="#">QR code generator using Javascript</a></h3>
 							<p>It generates a QR code based on the given Text or URL.</p>
 						</div>
 					</div>
 				</div>
 				<div class="col-md-4 d-flex ftco-animate">
 					<div class="blog-entry">
-						<a href="#"
-							class="block-20 zoom-effect" style="background-image: url('https://blog.openreplay.com/images/implementing-otp-phone-number-authentication-in-react-native/images/hero.png');">
+						<a href="#" class="block-20 zoom-effect"
+							style="background-image: url('https://blog.openreplay.com/images/implementing-otp-phone-number-authentication-in-react-native/images/hero.png');">
 						</a>
 						<div class="text mt-3 float-right d-block">
 
-							<h3 class="heading"><a
-									href="#">OTP validation form using Javascript</a></h3>
+							<h3 class="heading"><a href="#">OTP validation form using Javascript</a></h3>
 							<p>It sends the OTP to the entered Mobile Number.</p>
 						</div>
 					</div>
@@ -493,27 +540,27 @@
 			<div class="row d-flex justify-content-center">
 				<div class="col-md-4 d-flex ftco-animate">
 					<div class="blog-entry justify-content-end">
-						<a href="#"
-							class="block-20 zoom-effect" style="background-image: url('https://www.cbc.ca/kids/images/titactoe_thumb.jpeg');">
+						<a href="#" class="block-20 zoom-effect"
+							style="background-image: url('https://www.cbc.ca/kids/images/titactoe_thumb.jpeg');">
 						</a>
 						<div class="text mt-3 float-right d-block">
 
-							<h3 class="heading"><a
-									href="#">        Tic Tac Toe Web Game using HTML CSS Javascript      </a></h3>
+							<h3 class="heading"><a href="#"> Tic Tac Toe Web Game using HTML CSS Javascript </a></h3>
 							<p>It have features like restart the game.</p>
 						</div>
 					</div>
 				</div>
 				<div class="col-md-4 d-flex ftco-animate">
 					<div class="blog-entry justify-content-end">
-						<a href="#"
-							class="block-20 zoom-effect" style="background-image: url('https://media.idownloadblog.com/wp-content/uploads/2019/07/Beautiful-Weather-and-Alerts-on-Apple-TV-Forecast.jpg');">
+						<a href="#" class="block-20 zoom-effect"
+							style="background-image: url('https://media.idownloadblog.com/wp-content/uploads/2019/07/Beautiful-Weather-and-Alerts-on-Apple-TV-Forecast.jpg');">
 						</a>
 						<div class="text mt-3 float-right d-block">
 
-							<h3 class="heading"><a
-									href="#">weather web-Page with Real time data using Javascript </a></h3>
-							<p>It shows the real time weather of the searched location with the help of Javascript and API key.</p>
+							<h3 class="heading"><a href="#">weather web-Page with Real time data using Javascript </a>
+							</h3>
+							<p>It shows the real time weather of the searched location with the help of Javascript and
+								API key.</p>
 						</div>
 					</div>
 				</div>
@@ -578,6 +625,75 @@
 
 
 
+
+	<br><br>
+
+	<!-- 
+				.....blog section..........//////////////////////// -->
+	<!-- Blog Section -->
+	<section id="blog-section">
+		<div class="container">
+			<h1 class="mb-42">My Recent Blogs</h1><br>
+
+			<div class="row">
+				<div class="col-md-4">
+					<div class="card">
+						<img src="https://tse4.mm.bing.net/th?id=OIP.ESRdcspNaVgPqpkh5OALZgHaD0&pid=Api&P=0&h=180"
+							class="card-img-top" alt="Blog Image">
+						<div class="card-body">
+							<h5 class="card-title">Blog Title 1</h5>
+							<p class="card-text">Some quick example text to build on the card title and make up the bulk
+								of
+								the card's content.</p>
+							<a href="#" class="btn btn-primary">Read More</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="card">
+						<img src="https://www.forbes.com/advisor/wp-content/uploads/2022/09/how_to_start_a_travel_blog_-_article_image.jpg"
+							class="card-img-top" alt="Blog Image">
+						<div class="card-body">
+							<h5 class="card-title">Blog Title 2</h5>
+							<p class="card-text">Some quick example text to build on the card title and make up the bulk
+								of
+								the card's content.</p>
+							<a href="#" class="btn btn-primary">Read More</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="card">
+						<img src="https://www.greatlike.com/wp-content/uploads/2020/04/1584082601Web-development-designing-Anvar-Freelancer-1-1.png"
+							class="card-img-top" alt="Blog Image">
+						<div class="card-body">
+							<h5 class="card-title">Blog Title 3</h5>
+							<p class="card-text">Some quick example text to build on the card title and make up the bulk
+								of
+								the card's content.</p>
+							<a href="#" class="btn btn-primary">Read More</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	<section class="ftco-section contact-section ftco-no-pb" id="contact-section">
 		<div class="container">
 			<div class="row justify-content-center mb-5 pb-3">
@@ -604,7 +720,7 @@
 							<span class="icon-phone2"></span>
 						</div>
 						<h3 class="mb-4">Contact Number</h3>
-						<p><a href="tel://9137380392">+9137380392</a></p>
+						<p><a href="tel://9137380392">contact-info</a></p>
 					</div>
 				</div>
 				<div class="col-md-6 col-lg-3 d-flex ftco-animate">
@@ -613,7 +729,7 @@
 							<span class="icon-paper-plane"></span>
 						</div>
 						<h3 class="mb-4">Email Address</h3>
-						<p><a href="mailto:info@yoursite.com">Aayushkrishnaut@gmail.com</a></p>
+						<p><a href="mailto:aayushkrishnaut@gmail.com">Email</a></p>
 					</div>
 				</div>
 				<div class="col-md-6 col-lg-3 d-flex ftco-animate">
@@ -622,7 +738,7 @@
 							<span class="icon-globe"></span>
 						</div>
 						<h3 class="mb-4">Download Resume</h3>
-						<p><a href="#">Resume-link</a></p>
+						<p><a href="#">Resume</a></p>
 					</div>
 				</div>
 
@@ -631,8 +747,8 @@
 					<br>
 					<div class="row justify-content-center">
 						<div class="col-md-7 ftco-animate text-center">
-							<h2>Have a<span> Question? </span> <a href="#7"
-									class="btn btn-primary py-3 px-5">Click Here</a> </h2>
+							<h2>Have a<span> Question? </span> <a href="#" class="btn btn-primary py-3 px-5">Click
+									Here</a> </h2>
 						</div>
 					</div>
 					<br>
@@ -660,11 +776,11 @@
 			<div class="row">
 				<div class="col-md-12 text-center">
 
-					<p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+					<p>
 						Copyright &copy;
 						<script>document.write(new Date().getFullYear());</script> All rights reserved |
 						AayushkumarYadav</a>
-						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+
 					</p>
 				</div>
 			</div>
